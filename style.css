@@ -1,0 +1,100 @@
+:root{
+    --grid-length: 400px;
+    --cell-length: calc(calc(var(--grid-length) / 20) - 2px);
+    --mine-radius: 10px;
+}
+body {
+    background-color: rgb(186, 221, 235);
+}
+.cell {
+    background-color: whitesmoke;
+    border: gray solid 1px;
+    width: var(--cell-length);
+    height: var(--cell-length);
+}
+.flagged {
+    background-color: rgb(73, 154, 185);
+}
+.number {
+    position: relative;
+    opacity: 1000%;
+    font-size: var(--cell-length);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left:3px;
+    bottom: calc(var(--cell-length) + 2px);
+}
+.one {
+    color: rgb(71, 167, 199);
+}
+.two {
+    color: rgb(65, 206, 65);
+}
+.three {
+    color: rgb(197, 91, 107);
+}
+.four {
+    color: orange;
+}
+.five{
+    color: orangered;
+}
+.six {
+    color: red;
+}
+.seven {
+    color: rgb(184, 4, 4);
+}
+.eight {
+    color: rgb(107, 0, 0);
+
+}
+.grid {
+    border: 2px darkgrey solid;
+    display: flex;
+    flex-wrap: wrap;
+    width:var(--grid-length);
+    height: var(--grid-length);
+}
+.revealed { 
+    background-color: lightgray;
+    font-size: 40px;
+}
+.game {
+    width:500px;
+    margin: auto;
+}
+#restart-btn {
+
+    width: 200px;
+    margin: auto;
+}
+.btn-wrapper{
+    width: min-content;
+    margin: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black
+}
+h2{
+    text-transform: uppercase;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.title div{
+    width: 230px;
+    margin: auto;
+}
+
+.mine {
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    width: var(--mine-radius);
+    height: var(--mine-radius);
+    left: 5px;
+    top:5px;
+}
